@@ -84,15 +84,15 @@ The request frequency limit will be added to the specific interface, please chec
 
 **test environment:**
 
-Server address (IP whitelist restriction): https://api-merchant-test.logtec.me
+Server address (IP whitelist restriction): https://api-merchant-test.topoex.net/
 
-Merchant backend system (IP whitelist restriction): https://merchant-test.logtec.me
+Merchant backend system (IP whitelist restriction): https://merchant-test.topoex.net/
 
 **Production environment:**
 
-Server address (IP whitelist restriction): https://api-merchant.payoucard.com
+Server address (IP whitelist restriction): https://api-merchant.oex.com
 
-Merchant backend system: https://merchant.payoucard.com
+Merchant backend system: https://merchant.oex.com
 
 ## Connection Method
 All APIs are called using POST method. content-type: application/json format
