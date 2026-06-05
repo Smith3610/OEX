@@ -84,13 +84,13 @@ merchantId：商户ID。在商户后台系统-”商户基本信息” 菜单中
 ## API服务器地址
 **test环境：**
 
-服务器地址（IP白名单限制）：https://oex-test.topoex.net/
+服务器地址（IP白名单限制）：https://api-merchant-test.topoex.net/
 
 商户后台系统（IP白名单限制）：https://merchant-test.topoex.net/
 
 **生产环境：**
 
-服务器地址（IP白名单限制）：https://www.oex.com/
+服务器地址（IP白名单限制）：https://api-merchant.oex.com
 
 商户后台系统：https://merchant.oex.com
 
