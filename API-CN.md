@@ -471,6 +471,7 @@ POST /user/merchant/register
 | firstName   | String | Y        | 名(只能是英文，单词之间支持一个英文空格, 长度不能超过64)                                                            |
 | birthday    | String | N        | 生日 (yyyy-MM-dd)                                             |
 | nationality | String | N        | 国籍。2位数code码。参见dictionary_common.xlsx（sheet. regin）     |
+| ssn         | String | N        | ssn    nationality为US，ssn 字段必填校验                               |
 |             |        |          |                                                               |
 | sex         | String | N        | 性别 (1: 男, 2: 女)                                           |
 | country     | String | N        | 国家代码。2位数code码。参见dictionary_common.xlsx（sheet. regin） |
@@ -503,6 +504,7 @@ POST /user/merchant/register
     "firstName": "william",
     "birthday": "2002-01-01",
     "nationality": "CN",
+    "ssn": "123456789",
     "sex": 1,
     "countryCode": "CN",
     "town": "CN_11",
@@ -554,6 +556,7 @@ POST /user/merchant/info/update
 | firstName   | String | Y        | 名                                                            |
 | birthday    | String | N        | 生日 (yyyy-MM-dd)                                             |
 | nationality | String | N        | 国籍。2位数code码。参见dictionary_common.xlsx（sheet. regin）     |
+| ssn         | String | N        | ssn    nationality为US，ssn 字段必填校验                           |
 |             |        |          |                                                               |
 | sex         | String | N        | 性别 (1: 男, 2: 女)                                           |
 | country     | String | N        | 国家代码。2位数code码。参见dictionary_common.xlsx（sheet. regin） |
@@ -586,6 +589,7 @@ POST /user/merchant/info/update
     "firstName": "william",
     "birthday": "2002-01-01",
     "nationality": "CN",
+    "ssn": "123456789",
     "sex": 1,
     "countryCode": "CN",
     "town": "CN_11",
