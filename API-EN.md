@@ -461,7 +461,7 @@ POST /user/merchant/register
 | firstName | String | Y | First name (can only be in English, one English space is supported between words, and the length cannot exceed 64) |
 | birthday | String | N | Birthday (yyyy-MM-dd) |
 | nationality | String | N | Nationality. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
-| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified        |
+| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified ^[^&%@¥/%#?*【】\u4e00-\u9fa5]*$        |
 | | | | |
 | sex | String | N | Gender (1: male, 2: female) |
 | country | String | N | Country code. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
@@ -492,7 +492,7 @@ POST /user/merchant/register
         "firstName": "william",
         "birthday": "2002-01-01",
         "nationality": "CN",
-        "ssn": "123456789",
+        "ssn": "123-45-6789",
         "sex": 1,
         "countryCode": "CN",
         "town": "CN_11",
@@ -545,7 +545,7 @@ POST /user/merchant/info/update
 | firstName | String | Y | First name |
 | birthday | String | N | Birthday (yyyy-MM-dd) |
 | nationality | String | N | Nationality. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
-| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified        |
+| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified ^[^&%@¥/%#?*【】\u4e00-\u9fa5]*$        |
 | | | | |
 | sex | String | N | Gender (1: male, 2: female) |
 | country | String | N | Country code. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
@@ -577,7 +577,7 @@ format({"eeaFileProof":"http://baidu.com/photo.jpg","handheldPhoto":"http://baid
         "firstName": "william",
         "birthday": "2002-01-01",
         "nationality": "CN",
-        "ssn": "123456789",
+        "ssn": "123-45-6789",
         "sex": 1,
         "countryCode": "CN",
         "town": "CN_11",
