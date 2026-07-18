@@ -461,7 +461,7 @@ POST /user/merchant/register
 | firstName | String | Y | First name (can only be in English, one English space is supported between words, and the length cannot exceed 64) |
 | birthday | String | N | Birthday (yyyy-MM-dd) |
 | nationality | String | N | Nationality. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
-| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified ^[^&%@¥/%#?*【】\u4e00-\u9fa5]*$        |
+| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified ^[0-9•]{3}-[0-9•]{2}-[0-9•]{4}$        |
 | | | | |
 | sex | String | N | Gender (1: male, 2: female) |
 | country | String | N | Country code. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
@@ -545,7 +545,7 @@ POST /user/merchant/info/update
 | firstName | String | Y | First name |
 | birthday | String | N | Birthday (yyyy-MM-dd) |
 | nationality | String | N | Nationality. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
-| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified ^[^&%@¥/%#?*【】\u4e00-\u9fa5]*$        |
+| ssn         | String | N        | ssn    If the nationality is US, the SSN field must be filled and verified ^[0-9•]{3}-[0-9•]{2}-[0-9•]{4}$        |
 | | | | |
 | sex | String | N | Gender (1: male, 2: female) |
 | country | String | N | Country code. 2-digit code. See dictionary_common.xlsx (sheet. regin) |
@@ -894,7 +894,7 @@ POST /card/merchant/virtual
     "merchantId": "88888888",
     "data":{
         "cardNo": "12456782323",
-        "uniqueId": "345678",
+        "uniqueId": "345678"
     },
     "signature": "asfasdfjioasnfasdfasfiwaefasdfa"
 }
